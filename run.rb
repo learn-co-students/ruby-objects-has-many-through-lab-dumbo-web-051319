@@ -1,16 +1,14 @@
 require "pry"
-require "./lib/artist.rb"
-require "./lib/genre.rb"
-require "./lib/song.rb"
-
-spac_mad = Artist.new("Space Madness")
-rem = Artist.new("R. E. M.")
-sup_chu = Artist.new("Superchunk")
-
-hav_reason = spac_mad.new_song("If I Had a Reason", "Indie / Alternative")
-lones = spac_mad.new_song("Lonesomeville", "Indie / Alternative")
-whisper = sup_chu.new_song("In a Stage Whisper", "Indie / Alternative")
-
+require "./lib/doctor.rb"
+require "./lib/patient.rb"
+require "./lib/appointment.rb"
 
 binding.pry
+
+doctor_s = Doctor.new("Doctor X!")
+doctor_b = Doctor.new("Bruhle")
+patient_s = Patient.new("Syverson")
+appointment = Appointment.new("18 May 2019", patient_s, doctor_b)
+
+# binding.pry
 puts "'s been run'"
